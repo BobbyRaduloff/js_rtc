@@ -30,12 +30,12 @@ const initial_state: State = {
     new Sphere(
       new Vec3(1.25, 0, -2),
       0.5,
-      new Diffuse(new Vec3(0.7, 0.3, 0.3))
+      new Metalic(new Vec3(0.7, 0.6, 0.6), 0.1)
     ),
     new Sphere(
       new Vec3(-1.25, -0.2, -2),
       0.3,
-      new Metalic(new Vec3(0.8, 0.8, 0.8), 1)
+      new Metalic(new Vec3(0.8, 0.8, 0.8), 0.5)
     ),
     new Sphere(
       new Vec3(0, -100.5, -1),

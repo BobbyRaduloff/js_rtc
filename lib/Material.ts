@@ -45,7 +45,7 @@ export class Metalic implements Material {
 
   scatter(ray: Ray, hit: Hit): MaterialResult {
     const reflected = ray.direction.clone().reflect(hit.normal);
-    if (this.fuzz === 1) {
+    if (this.fuzz === 0) {
       return {
         should_scatter: true,
         attenuation: this.albedo,
